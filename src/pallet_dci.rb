@@ -54,7 +54,7 @@ class PalletMoveContext
       #send notifcations
       {status: 'OK'}
     end
-  resuce SomeObscureException
+  rescue SomeObscureException
     {errors: ["Panic Mode"]}
   end
 

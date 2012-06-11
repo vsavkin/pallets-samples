@@ -53,7 +53,7 @@ class MovePalletService
     #... notifications ....
 
     {status: 'OK'}
-  resuce SomeObscureException
+  rescue SomeObscureException
     {errors: ["Panic Mode"]}
   end
 end
