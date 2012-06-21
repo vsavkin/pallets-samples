@@ -70,9 +70,11 @@ pallet = Pallet.new '123', location_a, inventory
 
 PalletMoveService.move_pallet "123", location_b.id
 
-# it's a step in a right direction
-# all behaviour is localized in one file -> good
-# it's procedural. It doesn't match end users mental model.
-# End users don't know anything about pallet move services
-# what are the roles?
-# it's a huge procedure
+
+# Services do all heavy-lifting
+# It's a step in the right direction
+# One place to go and check out the algorithm
+# It's procedural programming. It doesn't match the end user's mental model.
+# It's procedural programming. Doesn't scale that well in terms of code size. It's hard to understand big procedures.
+# There is no MovePalletService in the warehouse
+# All actors are implicit

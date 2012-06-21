@@ -12,9 +12,9 @@ class InventoryLevel
 end
 
 class Location
-  attr_reader :name
+  attr_reader :name, :number_of_pallets
 
-  def initialize name; end
+  def initialize name, number_of_pallet; end
 
   def inventory_moved inventory, from_location
     InventoryLevel.remove_inventory inventory, from_location
@@ -52,6 +52,10 @@ p = Pallet.new '123', location_a, inventory
 
 p.move_to location_b
 
-# does not scale, God objects
-# the more objects are parts of an interaction the harder it's to reason about it
-# what if you need to create a pallet shipment each time you move a pallet? Putting it here as well?
+# It's a traditional OO approach
+# Entities do all heavy-lifting
+
+# It's easy to end up with GOD objects
+# It's hard to reason about the algorithm as it's scattered across so many objects.
+# There is no 1 place where you can go to understand the algorithm
+# Too many dependencies between entities

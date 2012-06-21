@@ -30,6 +30,8 @@ end
 
 
 class PalletMoveContext
+  include Context
+
   def self.move_pallet pallet_number, location_id
     pallet = Pallet.find_by_number pallet_number
     return {errors: ['Invalid pallet number']} unless pallet
@@ -43,32 +45,36 @@ class PalletMoveContext
   attr_reader :source_location, :destination_location, :pallet
 
   def initialize pallet, location
-    @source_location = pallet.location extend SourceLocation
-    @destination_location = location extend DestinationLocation
+    @source_location = pallet.location extend Source
+    @destination_location = location extend Destination
     @pallet = pallet
   end
 
   def move
     in_context do
-      source_location.send_pallet
-      #send notifcations
+      source_location.move_pallet_to_another_location
+      #send notifications
       {status: 'OK'}
     end
   rescue SomeObscureException
     {errors: ["Panic Mode"]}
   end
 
-  module SourceLocation
-    def send_pallet
-      InventoryLevel.remove_inventory ctx.pallet.inventory, self
+  module Source
+    include Role
+
+    def move_pallet_to_another_location
+      InventoryLevel.remove_inventory context.pallet.inventory, self
       decrement_number_of_pallets
-      ctx.destination_location.receive_pallet
+      context.destination_location.receive_pallet
     end
   end
 
-  module DestinationLocation
+  module Destination
+    include Role
+
     def receive_pallet
-      p = ctx.pallet
+      p = context.pallet
       InventoryLevel.add_inventory p.inventory, self
       increment_number_of_pallets
       p.update_location self
