@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd73c6f3-94f8-418e-8aa1-bcc0a595d377" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/real_example.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pallet_dci.rb" afterPath="$PROJECT_DIR$/src/pallet_dci.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pallet_services_2.rb" afterPath="$PROJECT_DIR$/src/pallet_services_2.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pallets_data.rb" afterPath="$PROJECT_DIR$/src/pallets_data.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pallets_services.rb" afterPath="$PROJECT_DIR$/src/pallets_services.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pallets_traditional.rb" afterPath="$PROJECT_DIR$/src/pallets_traditional.rb" />
     </list>
@@ -28,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pallet_dci.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pallet_dci.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pallet_dci.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="22" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+            <state line="66" column="34" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.5070243">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="real_example.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="real_example.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/real_example.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="43" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.9579208">
+            <state line="3" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -49,7 +50,34 @@
       <file leaf-file-name="pallet_services_2.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pallet_services_2.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="8" column="6" selection-start="112" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pallets_services.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pallets_services.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="2" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pallets_traditional.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pallets_traditional.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="20" selection-end="170" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pallets_data.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pallets_data.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="3" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,11 +97,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/pallets_traditional.rb" />
-        <option value="$PROJECT_DIR$/src/pallets_services.rb" />
-        <option value="$PROJECT_DIR$/src/pallet_services_2.rb" />
-        <option value="$PROJECT_DIR$/src/pallet_dci.rb" />
         <option value="$PROJECT_DIR$/src/real_example.rb" />
+        <option value="$PROJECT_DIR$/src/pallet_services_2.rb" />
+        <option value="$PROJECT_DIR$/src/pallets_services.rb" />
+        <option value="$PROJECT_DIR$/src/pallets_traditional.rb" />
+        <option value="$PROJECT_DIR$/src/pallets_data.rb" />
+        <option value="$PROJECT_DIR$/src/pallet_dci.rb" />
       </list>
     </option>
   </component>
@@ -160,8 +189,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.uml" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -183,7 +212,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24926254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -253,44 +282,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pallets_services.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1051" selection-end="1306" vertical-scroll-proportion="0.74752474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pallets_traditional.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="951" selection-end="1248" vertical-scroll-proportion="0.72648513">
+        <state line="12" column="0" selection-start="20" selection-end="170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pallets_data.rb">
+    <entry file="file://$PROJECT_DIR$/src/pallets_services.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="509" selection-end="509" vertical-scroll-proportion="0.5680693">
+        <state line="4" column="2" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pallet_services_2.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="8" column="6" selection-start="112" selection-end="117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pallet_dci.rb">
+    <entry file="file://$PROJECT_DIR$/src/pallets_data.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="22" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+        <state line="28" column="3" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/real_example.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="43" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.9579208">
+        <state line="3" column="6" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pallet_dci.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="34" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.5070243">
           <folding />
         </state>
       </provider>

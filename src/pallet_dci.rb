@@ -42,17 +42,17 @@ class PalletMoveContext
     PalletMoveContext.new(pallet, location).move
   end
 
-  attr_reader :source_location, :destination_location, :pallet
+  attr_reader :source, :destination, :pallet
 
   def initialize pallet, location
-    @source_location = pallet.location extend Source
-    @destination_location = location extend Destination
+    @source = pallet.location extend Source
+    @destination = location extend Destination
     @pallet = pallet
   end
 
   def move
     in_context do
-      source_location.move_pallet_to_another_location
+      source.move_pallet_to_destination
       #send notifications
       {status: 'OK'}
     end
@@ -63,10 +63,10 @@ class PalletMoveContext
   module Source
     include Role
 
-    def move_pallet_to_another_location
+    def move_pallet_to_destination
       InventoryLevel.remove_inventory context.pallet.inventory, self
       decrement_number_of_pallets
-      context.destination_location.receive_pallet
+      context.destination.receive_pallet
     end
   end
 

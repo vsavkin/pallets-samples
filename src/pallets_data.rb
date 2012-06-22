@@ -18,6 +18,16 @@ end
 class Inventory
 end
 
+class InventoryLevel
+  def self.remove_inventory inventory, location
+    #...
+  end
+
+  def self.add_inventory inventory, location
+    #...
+  end
+end
+
 class Pallet
   attr_reader :number, :location, :inventory
 

@@ -2,11 +2,11 @@ class Inventory
 end
 
 class InventoryLevel
-  def remove_inventory inventory, location
+  def self.remove_inventory inventory, location
     #...
   end
 
-  def add_inventory inventory, location
+  def self.add_inventory inventory, location
     #...
   end
 end
